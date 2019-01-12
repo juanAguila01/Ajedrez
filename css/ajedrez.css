@@ -1,0 +1,152 @@
+/*RESETEO DE LOS PADDING Y MARGINS DE TODO EL DOCUMENTO*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/**********************************************************************************************
+    CODIGO QUE GENERA EL TABLERO DE AJEDRES COMPLETO (sin las piesas solo genera el tablero)
+***********************************************************************************************/
+#stage{
+    position: relative;
+    flex-grow: .6;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.cell{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: solid 1px black;
+    box-sizing: border-box;
+    font-size: 10px;
+    /*DE MOMENTO EL DISPLAY FLEX*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cell > img{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+.cell:hover{
+    border : solid 3px green;
+}
+/*************************************************************************************
+    CODIGO DE ESTILOS PARA CUANDO UN PEON LLEGA AL OTRO EXTREMO DEL TABLERO
+**************************************************************************************/
+.seleccionarPiesa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.seleccionarPiesa > h2{
+    height: 30%;
+    font-size: 40px;
+    color :white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seleccionarPiesa > .contenedor {
+    display: flex;
+    justify-content: space-around;
+    height: 70%;
+}
+.seleccionarPiesa > .contenedor > div {
+    align-self: flex-start;
+    width: 100px;
+    height: 100px;
+    background: green;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.seleccionarPiesa > .contenedor > div:hover{
+    background: greenyellow;
+    color: grey;
+}
+/***********************************************************
+    CODIGO QUE ALINEA LOS TITULOS DEL JUEGO
+************************************************************/
+.contenedorJuego{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.contenedorJuego > .contenedorTitulos{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenedorJuego > .contenedorTitulos > div:nth-child(1) {
+    flex-grow: .2;
+}
+.contenedorJuego > .contenedorTitulos > div:nth-child(2) {
+    flex-grow: .6;
+}
+.contenedorJuego > .contenedorTitulos > div:nth-child(3) {
+    flex-grow: .2;
+}
+/**********************************************************************************************
+    CODIGO QUE GENERA LAS TABLAS QUE REPRESENTAN LAS PIESAS COMIDAS TANTO NEGRAS COMO BLANCAS
+***********************************************************************************************/
+.contenedorTablero {
+    display: flex;
+    align-content: space-around;
+    padding-top: 18px;
+    height: 480px;
+}
+.contenedorTablero > .piesasComidasNegras {
+    display: flex;
+    flex-grow: .2;
+    justify-content: center;
+}
+.contenedorTablero > .piesasComidasNegras > .columna > div{
+    width: 60px;
+    height: 60px;
+    border: solid 1px white;
+    font-size: 10px;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorTablero > .piesasComidasBlancas {
+    display: flex;
+    flex-grow: .2;
+    justify-content: center;
+}
+.contenedorTablero > .piesasComidasBlancas > .columna {
+    display: flex;
+    flex-direction: column;
+}
+.contenedorTablero > .piesasComidasBlancas > .columna > div{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: solid 1px white;
+    font-size: 10px;
+    background: brown;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

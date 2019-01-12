@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ajedrez.css">
+    <title>Ajedrez 2</title>
+</head>
+<body>
+    <!-- <h1>CHESS GAME</h1> -->
+    <div class="contenedorJuego">
+        <div class="contenedorTitulos">
+            <div><h2>NEGRAS CAPTURADAS</h2></div>
+            <div><h2>TABLERO DE AJEDREZ</h2></div>
+            <div><h2>BLANCAS CAPTURADAS</h2></div>
+        </div>
+        <div class="contenedorTablero">
+            <div class="piesasComidasNegras">
+                <div class="columna">
+                    <div id="c00"></div>
+                    <div id="c10"></div>
+                    <div id="c20"></div>
+                    <div id="c30"></div>
+                    <div id="c40"></div>
+                    <div id="c50"></div>
+                    <div id="c60"></div>
+                    <div id="c70"></div>
+                </div>
+                <div class="columna">
+                    <div id="c01"></div>
+                    <div id="c11"></div>
+                    <div id="c21"></div>
+                    <div id="c31"></div>
+                    <div id="c41"></div>
+                    <div id="c51"></div>
+                    <div id="c61"></div>
+                    <div id="c71"></div>
+                </div>
+            </div>
+            <div id="stage">
+                    <div class = 'cell brown' id = '00' style="top: 0px; left: 89.5px;"></div>
+                    <div class = 'cell' id = '01' style="top: 0px; left: 149.5px;"></div>
+                    <div class = 'cell brown' id = '02' style="top: 0px; left: 209.5px;"></div>
+                    <div class = 'cell' id = '03' style="top: 0px; left: 269.5px;"></div>
+                    <div class = 'cell brown' id = '04' style="top: 0px; left: 329.5px;"></div>
+                    <div class = 'cell' id = '05' style="top: 0px; left: 389.5px;"></div>
+                    <div class = 'cell brown' id = '06' style="top: 0px; left: 449.5px;"></div>
+                    <div class = 'cell' id = '07' style="top: 0px; left: 509.5px;"></div>
+
+                    <div class = 'cell' id = '10' style="top: 60px; left: 89.5px;"></div>
+                    <div class = 'cell brown' id = '11' style="top: 60px; left: 149.5px;"></div>
+                    <div class = 'cell' id = '12' style="top: 60px; left: 209.5px;"></div>
+                    <div class = 'cell brown' id = '13' style="top: 60px; left: 269.5px;"></div>
+                    <div class = 'cell' id = '14' style="top: 60px; left: 329.5px;"></div>
+                    <div class = 'cell brown' id = '15' style="top: 60px; left: 389.5px;"></div>
+                    <div class = 'cell' id = '16' style="top: 60px; left: 449.5px;"></div>
+                    <div class = 'cell brown' id = '17' style="top: 60px; left: 509.5px;"></div>
+
+                    <div class = 'cell brown' id = '20' style="top: 120px; left: 89.5px;"></div>
+                    <div class = 'cell' id = '21' style="top: 120px; left: 149.5px;"></div>
+                    <div class = 'cell brown' id = '22' style="top: 120px; left: 209.5px;"></div>
+                    <div class = 'cell' id = '23' style="top: 120px; left: 269.5px;"></div>
+                    <div class = 'cell brown' id = '24' style="top: 120px; left: 329.5px;"></div>
+                    <div class = 'cell' id = '25' style="top: 120px; left: 389.5px;"></div>
+                    <div class = 'cell brown' id = '26' style="top: 120px; left: 449.5px;"></div>
+                    <div class = 'cell' id = '27' style="top: 120px; left: 509.5px;"></div>
+                    
+                    <div class = 'cell' id = '30' style="top: 180px; left: 89.5px;"></div>
+                    <div class = 'cell brown' id = '31' style="top: 180px; left: 149.5px;"></div>
+                    <div class = 'cell' id = '32' style="top: 180px; left: 209.5px;"></div>
+                    <div class = 'cell brown' id = '33' style="top: 180px; left: 269.5px;"></div>
+                    <div class = 'cell' id = '34' style="top: 180px; left: 329.5px;"></div>
+                    <div class = 'cell brown' id = '35' style="top: 180px; left: 389.5px;"></div>
+                    <div class = 'cell' id = '36' style="top: 180px; left: 449.5px;"></div>
+                    <div class = 'cell brown' id = '37' style="top: 180px; left: 509.5px;"></div>
+
+                    <div class = 'cell brown' id = '40' style="top: 240px; left: 89.5px;"></div>
+                    <div class = 'cell' id = '41' style="top: 240px; left: 149.5px;"></div>
+                    <div class = 'cell brown' id = '42' style="top: 240px; left: 209.5px;"></div>
+                    <div class = 'cell' id = '43' style="top: 240px; left: 269.5px;"></div>
+                    <div class = 'cell brown' id = '44' style="top: 240px; left: 329.5px;"></div>
+                    <div class = 'cell' id = '45' style="top: 240px; left: 389.5px;"></div>
+                    <div class = 'cell brown' id = '46' style="top: 240px; left: 449.5px;"></div>
+                    <div class = 'cell' id = '47' style="top: 240px; left: 509.5px;"></div>
+
+                    <div class = 'cell' id = '50' style="top: 300px; left: 89.5px;"></div>
+                    <div class = 'cell brown' id = '51' style="top: 300px; left: 149.5px;"></div>
+                    <div class = 'cell' id = '52' style="top: 300px; left: 209.5px;"></div>
+                    <div class = 'cell brown' id = '53' style="top: 300px; left: 269.5px;"></div>
+                    <div class = 'cell' id = '54' style="top: 300px; left: 329.5px;"></div>
+                    <div class = 'cell brown' id = '55' style="top: 300px; left: 389.5px;"></div>
+                    <div class = 'cell' id = '56' style="top: 300px; left: 449.5px;"></div>
+                    <div class = 'cell brown' id = '57' style="top: 300px; left: 509.5px;"></div>
+
+                    <div class = 'cell brown' id = '60' style="top: 360px; left: 89.5px;"></div>
+                    <div class = 'cell' id = '61' style="top: 360px; left: 149.5px;"></div>
+                    <div class = 'cell brown' id = '62' style="top: 360px; left: 209.5px;"></div>
+                    <div class = 'cell' id = '63' style="top: 360px; left: 269.5px;"></div>
+                    <div class = 'cell brown' id = '64' style="top: 360px; left: 329.5px;"></div>
+                    <div class = 'cell' id = '65' style="top: 360px; left: 389.5px;"></div>
+                    <div class = 'cell brown' id = '66' style="top: 360px; left: 449.5px;"></div>
+                    <div class = 'cell' id = '67' style="top: 360px; left: 509.5px;"></div>
+
+                    <div class = 'cell' id = '70' style="top: 420px; left: 89.5px;"></div>
+                    <div class = 'cell brown' id = '71' style="top: 420px; left: 149.5px;"></div>
+                    <div class = 'cell' id = '72' style="top: 420px; left: 209.5px;"></div>
+                    <div class = 'cell brown' id = '73' style="top: 420px; left: 269.5px;"></div>
+                    <div class = 'cell' id = '74' style="top: 420px; left: 329.5px;"></div>
+                    <div class = 'cell brown' id = '75' style="top: 420px; left: 389.5px;"></div>
+                    <div class = 'cell' id = '76' style="top: 420px; left: 449.5px;"></div>
+                    <div class = 'cell brown' id = '77' style="top: 420px; left: 509.5px;"></div>
+            </div>
+            <div class="piesasComidasBlancas">
+                <div class="columna">
+                    <div id="c00"></div>
+                    <div id="c10"></div>
+                    <div id="c20"></div>
+                    <div id="c30"></div>
+                    <div id="c40"></div>
+                    <div id="c50"></div>
+                    <div id="c60"></div>
+                    <div id="c70"></div>
+                </div>
+                <div class="columna">
+                    <div id="c01"></div>
+                    <div id="c11"></div>
+                    <div id="c21"></div>
+                    <div id="c31"></div>
+                    <div id="c41"></div>
+                    <div id="c51"></div>
+                    <div id="c61"></div>
+                    <div id="c71"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MUESTRA EN PANTALLA DE LAS OPCIONES DE CAMBIAR
+    UN PEON CUANDO ESTE LLEGA AL OTRO EXTREMO DEL TABLERO -->
+    <div class="seleccionarPiesa" id="seleccionarPiesa">
+        <H2>Selecciona la piesa que desas obtener</H2>
+        <div class="contenedor">
+            <div id="caballo">CABALLO</div>
+            <div id="alfil">ALFIL</div>
+            <div id="torre">TORRE</div>
+            <div id="reina">REINA</div>
+        </div>
+    </div>
+    <!-- CREAMOS EL METODO FRAME QUE SE ENCARGARA 
+    DE REPETIR EL RENDER 60 VECES POR SEGUNDO -->
+    <script src="js/frame.js"></script>
+    <!-- PATRON FACTORY PARA CREAR LAS PIESAS DEL AJEDREZ -->
+    <script src="js/creadorPiesas.js"></script>
+    <!-- DINAMICA DEL JUEGO AQUI RELLENAMOS EL TABLERO Y DAMOS LAS CONDICIONES DEL JUEGO -->
+    <script src="js/tableroAjedrez.js"></script>
+    <!-- <script src="js/ajedrez.js"></script> -->
+    
+</body>
+</html>
