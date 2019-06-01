@@ -111,12 +111,12 @@
     padding-top: 18px;
     height: 480px;
 }
-.contenedorTablero > .piesasComidasNegras {
+.contenedorTablero > .piesasComidasBlancas {
     display: flex;
     flex-grow: .2;
     justify-content: center;
 }
-.contenedorTablero > .piesasComidasNegras > .columna > div{
+.contenedorTablero > .piesasComidasBlancas > .columna > div{
     width: 60px;
     height: 60px;
     border: solid 1px white;
@@ -128,23 +128,23 @@
     justify-content: center;
     align-items: center;
 }
-.contenedorTablero > .piesasComidasBlancas {
+.contenedorTablero > .piesasComidasCelestes {
     display: flex;
     flex-grow: .2;
     justify-content: center;
 }
-.contenedorTablero > .piesasComidasBlancas > .columna {
+.contenedorTablero > .piesasComidasCelestes > .columna {
     display: flex;
     flex-direction: column;
 }
-.contenedorTablero > .piesasComidasBlancas > .columna > div{
+.contenedorTablero > .piesasComidasCelestes > .columna > div{
     position: relative;
     width: 60px;
     height: 60px;
     border: solid 1px white;
     font-size: 10px;
     background: brown;
-    color: white;
+    color: skyblue;
     box-sizing: border-box;
     display: flex;
     justify-content: center;

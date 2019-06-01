@@ -1,0 +1,17 @@
+commit 2a905837349c289be559086ce80ed91a911d01c8
+Author: Juan Aguila <juan_aguilac13@hotmail.com>
+Date:   Tue Jan 29 00:52:23 2019 -0300
+
+    Comit a eliminar
+
+commit e90ccf31e36b8cef19c4a7673f6f1834888aaefe
+Author: Juan Aguila <juan_aguilac13@hotmail.com>
+Date:   Sat Jan 12 12:52:12 2019 -0300
+
+    eliminar un archivo inutil
+
+commit c642506acf9aa6ee80c95ebcf40b4c01812c75c5
+Author: Juan Aguila <juan_aguilac13@hotmail.com>
+Date:   Sat Jan 12 12:49:50 2019 -0300
+
+    Este es mi proyecto creando un ajedrez

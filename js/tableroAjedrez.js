@@ -21,7 +21,7 @@ let tablero = [
      ['','','','','','','',''],
      ['','','','','','','','']
 ];
-let piesasComidasNegras = [
+let piesasComidasBlancas = [
     ['',''],
     ['',''],
     ['',''],
@@ -31,7 +31,7 @@ let piesasComidasNegras = [
     ['',''],
     ['','']
 ];
-let piesasComidasBlancas = [
+let piesasComidasCelestes = [
     ['',''],
     ['',''],
     ['',''],
@@ -105,14 +105,15 @@ let juego = (function (){
                 }else{
                     app.cell.style.background = 'black';
                 }
-                //EN CASO DE QUE TENGA QUE VOLVRER A COUPARLO.
-                // if (tablero[i][x].colorPiesa) {
-                //     app.cell.style.background = 'brown';
-                //     app.cell.style.color = 'white';
-                // }else if(tablero[i][x].colorPiesa === false){
-                //     app.cell.style.background = 'black';
-                //     app.cell.style.color = 'white';
-                // } 
+                // EN CASO DE QUE TENGA QUE VOLVRER A COUPARLO.
+                //pinta mis piesas de diferentes colores.
+                if (tablero[i][x].colorPiesa) {
+                    // app.cell.style.background = 'brown';
+                    app.cell.style.color = 'skyblue';
+                }else if(tablero[i][x].colorPiesa === false){
+                    // app.cell.style.background = 'black';
+                    app.cell.style.color = 'white';
+                } 
                 switch (tablero[i][x].idPiesa) {
                     case 1:
                         //ESTE ES EL CODIGO CORRECTO O ALMENOS LA IDEA 
@@ -193,9 +194,9 @@ let juego = (function (){
                     break piesasComidasLabel;
                 }
                 if (app.colorPiesaComida === false) {
-                    if (piesasComidasBlancas[i][x] == '') {
-                        piesasComidasBlancas[i][x] = app.nombrePiesaComida;
-                        app.cellPiesaComida = document.querySelector(`.piesasComidasNegras > .columna > #c${i}${x}`);
+                    if (piesasComidasCelestes[i][x] == '') {
+                        piesasComidasCelestes[i][x] = app.nombrePiesaComida;
+                        app.cellPiesaComida = document.querySelector(`.piesasComidasBlancas > .columna > #c${i}${x}`);
                         if (app.cellPiesaComida != undefined) {
                             app.cellPiesaComida.innerHTML = app.nombrePiesaComida;
                         }
@@ -203,9 +204,9 @@ let juego = (function (){
                         break piesasComidasLabel;
                     }
                 }else if(app.colorPiesaComida === true) {
-                    if (piesasComidasNegras[i][x] == '') {
-                        piesasComidasNegras[i][x] = app.nombrePiesaComida;
-                        app.cellPiesaComida = document.querySelector(`.piesasComidasBlancas > .columna > #c${i}${x}`);
+                    if (piesasComidasBlancas[i][x] == '') {
+                        piesasComidasBlancas[i][x] = app.nombrePiesaComida;
+                        app.cellPiesaComida = document.querySelector(`.piesasComidasCelestes > .columna > #c${i}${x}`);
                         if (app.cellPiesaComida != undefined) {
                             app.cellPiesaComida.innerHTML = app.nombrePiesaComida;
                         }
